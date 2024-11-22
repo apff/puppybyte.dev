@@ -1,0 +1,16 @@
+intro: We are a developer couple passionate about creating elegant and functional applications. Together, we combine our skills and creativity to bring ideas to life.
+
+team:
+  - name: Ana Filipe
+    image: /assets/img/puppybyte_alt.jpg
+    description: Multiplatform Developer with experience ranging from mobile apps, libs, tooling, and cloud engineering. Passionate about creating beautiful and useful solutions that make a difference.
+    social:
+      github: https://github.com/apff
+      linkedin: https://linkedin.com/in/apff
+
+  - name: Pedro Lousada
+    image: /assets/img/puppybyte.jpg
+    description: Lead Developer with extensive experience with app SDKs and dev tooling. Specialized in architecting scalable solutions and mentoring development teams.
+    social:
+      github: https://github.com/plousada
+      linkedin: https://linkedin.com/in/plousada

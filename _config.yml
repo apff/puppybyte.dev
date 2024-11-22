@@ -1,0 +1,12 @@
+# Jekyll site settings
+
+title: PuppyByte
+description: Paw-some apps dev
+
+url: "https://puppybyte.dev"
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+

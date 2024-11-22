@@ -1,0 +1,17 @@
+- title: Xpenses
+  image: /assets/img/xpenses.jpg
+  description: A comprehensive and privacy-focused home budget and expenses tracking application, designed with families in mind.
+  features:
+    - Intuitive expense tracking and categorization
+    - Family expenses sharing
+    - Privacy-first data management
+    - Budget insights and planning tools
+
+- title: A Lista
+  image: /assets/img/alista.jpg
+  description: A smart shopping list app that makes organizing products and categories effortless, helping you shop more efficiently.
+  features:
+    - Quick item entry with custom categories
+    - Flexible product filtering and sorting
+    - Customizable shopping organization
+    - Clean and intuitive interface

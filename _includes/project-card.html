@@ -1,0 +1,17 @@
+
+<div class="project-card">
+  <div class="project-image">
+    <img src="{{ include.image | relative_url }}" alt="{{ include.title }} App">
+  </div>
+  <div class="project-content">
+    <div class="project-text">
+      <h3>{{ include.title }}</h3>
+      <p class="project-description">{{ include.description }}</p>
+      <ul class="project-features">
+        {% for feature in include.features %}
+        <li>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
