@@ -74,4 +74,25 @@ document.addEventListener('DOMContentLoaded', () => {
       contactPopup.style.display = 'none';
     }
   });
+
+  // Project cards touch interaction
+  const projectCards = document.querySelectorAll('.project-card');
+  
+  projectCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      // Remove focus from other cards
+      projectCards.forEach(c => {
+        if (c !== card) c.classList.remove('is-focused');
+      });
+      // Toggle focus on clicked card
+      card.classList.toggle('is-focused');
+    });
+  });
+
+  // Remove focus when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.project-card')) {
+      projectCards.forEach(card => card.classList.remove('is-focused'));
+    }
+  });
 });

@@ -404,12 +404,32 @@ main {
   transform: translateY(0);
 }
 
-.project-card:hover .project-description {
-  transition-delay: 0.3s;
+.project-card.is-focused {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.project-card:hover .project-features {
-  transition-delay: 0.4s;
+.project-card.is-focused .project-content {
+  justify-content: flex-start;
+  background: linear-gradient(90deg,
+      rgba(51, 51, 51, 0.95) 0%,
+      rgba(51, 51, 51, 0.95) 50%,
+      rgba(51, 51, 51, 0.7) 100%);
+}
+
+.project-card.is-focused h3 {
+  transform: translateY(-35px);
+}
+
+.project-card.is-focused .project-description,
+.project-card.is-focused .project-features {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(-45px);
+}
+
+.project-card.is-focused .project-features {
+  transform: translateY(-65px);
 }
 
 .project-image {
