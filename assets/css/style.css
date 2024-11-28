@@ -163,7 +163,6 @@ main {
 .banner-image {
   max-width: 260px;
   height: auto;
-  filter: drop-shadow(0 4px 80px rgba(0, 0, 0, 0.2));
 }
 
 .section {
@@ -306,7 +305,6 @@ main {
   gap: 1em;
   margin-bottom: 1em;
 }
-
 
 .projects-carousel {
   flex: 1;
@@ -618,4 +616,149 @@ main {
 .contact-link {
   cursor: pointer;
   transition: color 0.3s ease;
+}
+
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+  .nav-bar {
+    padding: 0 0.5em;
+    height: 45px;
+  }
+  .brand {
+    padding: 0 0;
+  }
+  .logo {
+    max-width: 35px;
+  }
+  .brand-name {
+    font-size: 1em;
+    padding-right: 1.5em;
+  }
+  .nav-links {
+    gap: 0.1em;
+  }
+  .nav-links a {
+    font-size: 0.75em;
+  }
+  .contact-btn {
+    padding: 0.4em 0.2em;
+    margin-left: 0.2em;
+    font-size: 0.73em;
+  }
+
+  .section {
+    padding: 45px 0 0;
+  }
+  .section h2 {
+    font-size: 1.8em;
+  }
+  .snap-container {
+    scroll-padding-top: 45px; /* Match exactly with header height */
+  }
+
+  .banner-content {
+    flex-direction: column;
+    padding: 0 2em;
+    text-align: center;
+    justify-content: center;
+    gap: 2em;
+    margin-top: -1.5em; 
+  }
+
+  .banner-text {
+    font-size: 2.5em;
+    margin-top: -2em; 
+  }
+  .banner-image {
+    max-width: 160px;
+    margin-top: -4em;
+  }
+  .scroll-arrow {
+    font-size: 5em;
+    bottom: 0.6em;
+    right: 0.3em;
+  }
+
+  .team-intro {
+    padding: 0 1em;
+    font-size: 1em;
+    margin: -0.8em 0 -1.2em;
+    line-height: 1.3;
+  }
+  .team-grid {
+    flex-direction: column;
+    margin: 3em auto;
+    padding: 0 1em;
+    gap: 0em;
+  }
+  .team-member {
+    flex: 0 0 40%;
+    display: flex;
+    gap: 0.5em;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+  .team-member h3 {
+    font-size: 1em;
+  }
+  .team-member p {
+    line-height: 1.3;
+    font-size: 1.1em;
+    margin: 0;
+  }
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 0.5em;
+  }
+  .social-links {
+    gap: 0.5em;
+  }
+  .member-description {
+    flex: 0 0 60%;
+    display: flex;
+  }
+  
+  .member-info {
+    flex: 0 0 40%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .project-card {
+    min-width: 100%;
+    margin-right: 0;
+    height: calc(100vh - 280px);
+  }
+
+  .project-content {
+    padding: 1em;
+  }
+
+  .project-card h3 {
+    font-size: 1.8em;
+    padding-top: 1em;
+  }
+
+  .project-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .popup-content {
+    width: 95%;
+    margin: 1em;
+  }
+
+  .carousel-progress {
+    bottom: 6em;
+  }
+
+  .copyright {
+    font-size: 0.9em;
+    padding: 0 1em;
+  }
 }
