@@ -51,29 +51,31 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Contact Popup
-  const contactBtn = document.getElementById('contactBtn');
   const contactPopup = document.getElementById('contactPopup');
   const closePopup = document.getElementById('closePopup');
-  const contactLink = document.querySelector('.contact-link');
-
-  [contactBtn, contactLink].forEach(el => {
-    if (el) {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        contactPopup.style.display = 'flex';
-      });
+  
+  // Use document.body to delegate the event for all current and future .contact-link elements
+  document.body.addEventListener('click', (e) => {
+    const target = e.target.closest('.contact-btn, .contact-link');
+    if (target && (target.classList.contains('contact-btn') || target.classList.contains('contact-link'))) {
+      e.preventDefault();
+      contactPopup.style.display = 'flex';
     }
   });
 
-  closePopup.addEventListener('click', () => {
-    contactPopup.style.display = 'none';
-  });
-
-  contactPopup.addEventListener('click', (e) => {
-    if (e.target === contactPopup) {
+  if (closePopup) {
+    closePopup.addEventListener('click', () => {
       contactPopup.style.display = 'none';
-    }
-  });
+    });
+  }
+
+  if (contactPopup) {
+    contactPopup.addEventListener('click', (e) => {
+      if (e.target === contactPopup) {
+        contactPopup.style.display = 'none';
+      }
+    });
+  }
 
   // Project cards touch interaction
   const projectCards = document.querySelectorAll('.project-card');
