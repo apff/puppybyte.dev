@@ -638,6 +638,60 @@ main {
   transition: color 0.3s ease;
 }
 
+/* Privacy Policy Page Styles */
+.privacy-policy {
+  background-color: #333333;
+  min-height: 100vh;
+  padding: 80px 2em 2em;
+  scroll-margin-top: 60px;
+  overflow-y: auto;
+}
+
+.privacy-policy .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.privacy-policy h1 {
+  font-size: 2.5em;
+  color: rgb(193, 247, 242);
+  margin-bottom: 0.2em;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.last-updated {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  margin-bottom: 2em;
+  font-size: 0.9em;
+}
+
+.policy-section {
+  margin-bottom: 2em;
+}
+
+.policy-section h2 {
+  color: rgb(113, 201, 193);
+  font-size: 1.5em !important;
+  margin-bottom: 0.8em;
+  text-align: left !important;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.policy-section p, .policy-section li {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.policy-section ul {
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.policy-section li {
+  margin-bottom: 0.5em;
+}
 
 /* Extra small devices */
 @media screen and (max-width: 480px) {
@@ -780,5 +834,18 @@ main {
   .copyright {
     font-size: 0.9em;
     padding: 0 1em;
+  }
+
+  .privacy-policy {
+    padding: 60px 1.5em 1.5em;
+    scroll-margin-top: 45px;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 1.8em;
+  }
+  
+  .policy-section h2 {
+    font-size: 1.3em !important;
   }
 }
