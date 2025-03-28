@@ -54,27 +54,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactPopup = document.getElementById('contactPopup');
   const closePopup = document.getElementById('closePopup');
   
-  // Use document.body to delegate the event for all current and future .contact-link elements
-  document.body.addEventListener('click', (e) => {
-    const target = e.target.closest('.contact-btn, .contact-link');
-    if (target && (target.classList.contains('contact-btn') || target.classList.contains('contact-link'))) {
-      e.preventDefault();
-      contactPopup.style.display = 'flex';
-    }
-  });
-
-  if (closePopup) {
-    closePopup.addEventListener('click', () => {
-      contactPopup.style.display = 'none';
-    });
-  }
-
+  // Ensure compatibility with all pages by checking for elements first
   if (contactPopup) {
+    // More robust event delegation for contact buttons
+    document.body.addEventListener('click', (e) => {
+      // Find the clicked element or its closest parent with relevant classes
+      const target = e.target.closest('.contact-btn, .contact-link');
+      
+      if (target) {
+        e.preventDefault();
+        // Make popup visible
+        contactPopup.style.display = 'flex';
+        
+        // Log for debugging
+        console.log('Contact popup triggered');
+      }
+    });
+
+    // Close popup when clicking the X
+    if (closePopup) {
+      closePopup.addEventListener('click', () => {
+        contactPopup.style.display = 'none';
+      });
+    }
+
+    // Close popup when clicking outside
     contactPopup.addEventListener('click', (e) => {
       if (e.target === contactPopup) {
         contactPopup.style.display = 'none';
       }
     });
+  } else {
+    console.warn('Contact popup element not found in DOM');
   }
 
   // Project cards touch interaction
