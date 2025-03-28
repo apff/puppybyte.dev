@@ -3,17 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel-wrapper');
   const dots = document.querySelectorAll('.progress-dot');
 
-  const updateProgress = () => {
-    const scrollPercentage = carousel.scrollLeft / (carousel.scrollWidth - carousel.clientWidth);
-    const activeIndex = Math.round(scrollPercentage);
-    
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === activeIndex);
-    });
-  };
+  if (carousel && dots.length > 0) {
+    const updateProgress = () => {
+      const scrollPercentage = carousel.scrollLeft / (carousel.scrollWidth - carousel.clientWidth);
+      const activeIndex = Math.round(scrollPercentage);
+      
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === activeIndex);
+      });
+    };
 
-  carousel.addEventListener('scroll', updateProgress);
-  updateProgress(); // Initial state
+    carousel.addEventListener('scroll', updateProgress);
+    updateProgress(); // Initial state
+  }
 
   // Nav Link Section highlighting
   const sections = document.querySelectorAll('.section');
