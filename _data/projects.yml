@@ -1,6 +1,7 @@
 - title: Xpenses
   image: /assets/img/xpenses.jpg
   description: A comprehensive and privacy-focused home budget and expenses tracking application, designed with families in mind.
+  link: /xpenses/
   features:
     - Intuitive expense tracking and categorization
     - Family expenses sharing

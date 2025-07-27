@@ -5,6 +5,9 @@ description: Paw-some apps dev
 
 url: "https://puppybyte.dev"
 
+# App Store Links
+xpenses_app_store_url: "https://apps.apple.com/app/id6743875432"
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache

@@ -1,0 +1,27 @@
+{% assign has_links = page.links != nil and page.links != empty %}
+<nav class="xpenses-nav{% unless has_links %} no-links{% endunless %}">
+  <div class="container">
+    <a href="/xpenses/" class="xpenses-nav-logo">
+      <img src="{{ '/assets/img/piggy2.png' | relative_url }}" alt="Xpenses Logo">
+      <span>Xpenses</span>
+    </a>
+    
+    <!-- Mobile hamburger menu button -->
+    <button class="xpenses-nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="xpenses-nav-links">
+      {% if has_links %}
+        {% for feature in page.links %}
+          <a href="#{{ feature.id }}">{{ feature.title }}</a>
+        {% endfor %}
+        <a href="#download" class="xpenses-nav-download">Download</a>
+      {% else %}
+        <a href="/xpenses/#download" class="xpenses-nav-download">Download</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>

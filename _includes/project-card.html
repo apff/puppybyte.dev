@@ -1,4 +1,3 @@
-
 <div class="project-card">
   <div class="project-image">
     <img src="{{ include.image | relative_url }}" alt="{{ include.title }} App">
@@ -11,7 +10,43 @@
         {% for feature in include.features %}
         <li>{{ feature }}</li>
         {% endfor %}
+        {% if include.link %}
+        <div class="project-link">
+          <a href="{{ include.link | relative_url }}" class="learn-more-btn">Learn More</a>
+        </div>
       </ul>
+      {% endif %}
     </div>
   </div>
 </div>
+
+<style>
+  .project-link {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  .project-link a {
+    color: #ffffff;
+  }
+  .project-link a:hover {
+    color: #c6fcff;
+  }
+  
+  .learn-more-btn {
+    display: inline-block;
+    background-color: #47b9b4; /* Matching Xpenses teal color */
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #1E8E87;
+    transform: translateY(-2px);
+  }
+</style>

@@ -1,0 +1,17 @@
+- title: "Xpenses 101: Your First Steps to Financial Clarity"
+  excerpt: "Get up and running with Xpenses quickly. Start tracking your finances with confidence and complete privacy."
+  url: "/xpenses/blog/getting-started-with-xpenses"
+  category: "Getting Started"
+  date: "July 29, 2025"
+  read_time: "3 min read"
+  image: "/assets/img/phonepup2.png"
+  featured: true
+
+- title: "Managing Family Finances Together"
+  excerpt: "Transform money management from a source of stress into a tool for partnership. Learn how couples can effortlessly collaborate on their financial journey."
+  url: "/xpenses/blog/family-finances"
+  category: "Family Planning"
+  date: "July 31, 2025"
+  read_time: "10 min read"
+  image: "/assets/img/2puppies.png"
+  featured: false

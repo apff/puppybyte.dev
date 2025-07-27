@@ -1,4 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Mobile Navigation Toggle
+  const navToggle = document.querySelector('.xpenses-nav-toggle');
+  const mobileNavLinks = document.querySelector('.xpenses-nav-links');
+
+  if (navToggle && mobileNavLinks) {
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileNavLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    const navLinkItems = mobileNavLinks.querySelectorAll('a');
+    navLinkItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        mobileNavLinks.classList.remove('active');
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !mobileNavLinks.contains(e.target)) {
+        navToggle.classList.remove('active');
+        mobileNavLinks.classList.remove('active');
+      }
+    });
+  }
+
   // Carousel
   const carousel = document.querySelector('.carousel-wrapper');
   const dots = document.querySelectorAll('.progress-dot');
