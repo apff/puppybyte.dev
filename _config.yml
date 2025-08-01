@@ -6,7 +6,7 @@ description: Paw-some apps dev
 url: "https://puppybyte.dev"
 
 # App Store Links
-xpenses_app_store_url: "https://apps.apple.com/app/id6743875432"
+xpenses_app_store_url: "https://apps.apple.com/pt/app/xpenses-finances-tracker/id6743875432?l=en-GB"
 
 plugins:
   - jekyll-feed
