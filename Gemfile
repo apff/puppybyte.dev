@@ -34,5 +34,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.9"
 
-gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
