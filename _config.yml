@@ -13,3 +13,12 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
+# Keep repo docs out of the published site. Setting this replaces the default
+# exclude list (Jekyll 3 does not merge), so the entries Jekyll and
+# github-pages excluded on their own are restated here.
+exclude:
+  - README.md
+  - AGENTS.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock

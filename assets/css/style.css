@@ -703,6 +703,22 @@ main {
   margin-bottom: 0.5em;
 }
 
+.policy a {
+  color: rgb(193, 247, 242);
+  text-decoration-color: rgb(113, 201, 193);
+  text-underline-offset: 0.2em;
+  transition: color 0.3s ease;
+}
+
+.policy a:hover {
+  color: #fff;
+}
+
+/* Keep in-page link targets clear of the fixed nav */
+.policy [id] {
+  scroll-margin-top: 90px;
+}
+
 /* Extra small devices */
 @media screen and (max-width: 480px) {
   .nav-bar {
@@ -725,7 +741,7 @@ main {
   .nav-links a {
     font-size: 0.75em;
   }
-  .contact-btn {
+  .nav-links .contact-btn {
     padding: 0.4em 0.2em;
     margin-left: 0.2em;
     font-size: 0.73em;
