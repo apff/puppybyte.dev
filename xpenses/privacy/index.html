@@ -1,7 +1,7 @@
 ---
 layout: xpenses
 title: Xpenses - Privacy Policy
-last_updated: July 21, 2025
+last_updated: October 10, 2026
 ---
 
 <div class="policy-container">
@@ -16,8 +16,8 @@ last_updated: July 21, 2025
       <h3>Key Privacy Principles</h3>
       <ul>
         <li><strong>Privacy by Design:</strong> Your financial data remains on your devices and in your personal iCloud account only</li>
-        <li><strong>No Server Storage:</strong> We do not collect, store, or process your financial data on our servers</li>
-        <li><strong>End-to-End Encryption:</strong> When using iCloud sync, your data is protected with end-to-end encryption</li>
+        <li><strong>No Server Storage:</strong> We do not collect, store, or process your financial data</li>
+        <li><strong>Encrypted Sync:</strong> When using iCloud sync, the content of your records is encrypted on your device before it is uploaded, and is end-to-end encrypted when you have Apple's Advanced Data Protection turned on (see <a href="#data-encryption">Data Encryption</a>)</li>
         <li><strong>User Control:</strong> You decide what data to store, where to store it, and whom to share it with</li>
       </ul>
     </div>
@@ -26,13 +26,13 @@ last_updated: July 21, 2025
       <h2>Information We Collect</h2>
       
       <h3>Personal Information</h3>
-      <p><strong>We do not collect personal information.</strong> The App operates without requiring account creation, email addresses, or any personal identifiers.</p>
+      <p><strong>We do not collect personal information when you use the App.</strong> The App operates without requiring account creation, email addresses, or any personal identifiers. The only personal information we ever receive is what you choose to send us through a contact form (see <a href="#connections">Connections the App Makes</a>).</p>
       
       <h3>Financial Data</h3>
       <p><strong>We do not collect or access your financial data.</strong> All expense tracking information, categories, budgets, and related financial data you enter into the App remains exclusively under your control and is stored as follows:</p>
       <ul>
         <li><strong>Local Storage:</strong> By default, stored only on your iOS device using SwiftData</li>
-        <li><strong>iCloud Storage (Optional):</strong> If you enable iCloud sync, stored in your personal iCloud account using CloudKit with end-to-end encryption</li>
+        <li><strong>iCloud Storage (Optional):</strong> If you enable iCloud sync, stored in your personal iCloud account using CloudKit, encrypted as described under <a href="#data-encryption">Data Encryption</a></li>
         <li><strong>Shared Data (Optional):</strong> If you choose to share with family members, stored in iCloud shared databases that you control</li>
       </ul>
       
@@ -40,12 +40,12 @@ last_updated: July 21, 2025
       <p><strong>We do not collect usage analytics or crash reports.</strong> The App does not track how you use it, what features you access, or gather any behavioral data.</p>
       
       <h3>Device Information</h3>
-      <p>The App may access standard iOS device capabilities required for functionality (such as notifications permissions), but this information is not transmitted to us or stored outside your device.</p>
+      <p>The App does not send information about your device to us, with one exception you control: a message sent through the App's contact form includes your device model, iOS version, App version and screen size unless you turn that option off.</p>
     </div>
 
     <div class="policy-section">
       <h2>How We Use Information</h2>
-      <p><strong>We do not use your information because we do not collect it.</strong> The App functions entirely on your device and in your personal iCloud account. We have no access to your financial data, usage patterns, or personal information.</p>
+      <p><strong>We do not use your information because we do not collect it.</strong> The App keeps your data on your device and, if you enable sync, in your personal iCloud account. We have no access to your financial data or usage patterns. The few connections the App makes to the internet are listed under <a href="#connections">Connections the App Makes</a>.</p>
       
       <h3>App Functionality</h3>
       <p>The App uses your financial data solely to provide expense tracking services to you, including:</p>
@@ -60,8 +60,26 @@ last_updated: July 21, 2025
     </div>
 
     <div class="policy-section">
+      <h2 id="connections">Connections the App Makes</h2>
+      <p>The App contacts the internet only for the purposes below. None of them sends your financial data to us.</p>
+
+      <h3>Apple Services</h3>
+      <ul>
+        <li><strong>iCloud:</strong> Only if you enable iCloud sync or sharing, as described in this policy</li>
+        <li><strong>App Store:</strong> To show plans and prices and to process and verify purchases</li>
+      </ul>
+
+      <h3>Promotional Text</h3>
+      <p>When it starts, the App downloads a small public file with the text of current offers shown on the Premium screen. The request carries no information about you or your data, and we do not use it to identify or track you.</p>
+
+      <h3>Contact Form</h3>
+      <p>If you choose to write to us through the App's contact form, we receive what you enter: your name, email address, subject and message. Unless you turn that option off, the message also includes your device model, iOS version, App version and screen size. Your financial data is never attached.</p>
+      <p>Messages from the App's contact form, and from the one on this website, are delivered to our support mailbox by a form-handling service acting on our behalf. We use what you send only to answer you and to fix the problems you report. You can ask us to delete your messages at any time.</p>
+    </div>
+
+    <div class="policy-section">
       <h2>Information Sharing and Disclosure</h2>
-      <p><strong>We do not share your information with third parties because we do not have access to it.</strong></p>
+      <p><strong>We do not share your financial information with third parties because we do not have access to it.</strong> Messages you send through a contact form pass through the form-handling service described above, and are not shared with anyone else.</p>
       
       <h3>No Third-Party Sharing</h3>
       <p>We do not:</p>
@@ -80,7 +98,7 @@ last_updated: July 21, 2025
         <li>Uses Apple's iCloud sharing infrastructure</li>
         <li>Can be revoked by you at any time</li>
         <li>Is limited to users you specifically invite</li>
-        <li>Is protected by the same end-to-end encryption</li>
+        <li>Is protected by the same encryption as the rest of your iCloud data in the App</li>
       </ul>
       
       <h3>Legal Requirements</h3>
@@ -101,24 +119,25 @@ last_updated: July 21, 2025
       <h3>Security Measures</h3>
       <p>We implement industry-standard security practices:</p>
       <ul>
-        <li><strong>End-to-End Encryption:</strong> When using iCloud sync, your data is protected using Apple's CloudKit encryption support</li>
+        <li><strong>Encrypted Content:</strong> When using iCloud sync, the content of your records is stored in CloudKit encrypted fields, which are encrypted on your device before upload</li>
         <li><strong>Private Database:</strong> Your iCloud data is stored in your private CloudKit database, not shared storage</li>
-        <li><strong>No Server Access:</strong> We have no servers that could be compromised or accessed</li>
+        <li><strong>No Servers:</strong> We operate no servers, so there is nothing on our side holding your data that could be compromised or accessed</li>
         <li><strong>Apple's Security:</strong> Benefits from Apple's iOS and iCloud security infrastructure</li>
       </ul>
       
-      <h3>Data Encryption</h3>
-      <p>Your financial information is encrypted such that:</p>
+      <h3 id="data-encryption">Data Encryption</h3>
+      <p>This section applies only if you enable iCloud sync. Everything the App stores in iCloud is encrypted in transit and on Apple's servers, and we cannot access any of it.</p>
+      <p>The content of your records (titles, amounts, categories, budget amounts and the details of recurring transactions) is additionally encrypted on your device before it is uploaded. Who can decrypt it depends on a setting of your Apple Account, not on the App:</p>
       <ul>
-        <li>We cannot access your data</li>
-        <li>Apple cannot access your encrypted financial data</li>
-        <li>Only you and devices with your iCloud Keychain can decrypt the data</li>
-        <li>Data in transit and at rest is protected by encryption</li>
+        <li><strong>With Advanced Data Protection turned on:</strong> it is end-to-end encrypted. Only your trusted devices, and those of the people you share with, hold the keys. Apple cannot read it.</li>
+        <li><strong>With standard data protection (Apple's default):</strong> it is encrypted, but Apple holds the encryption keys.</li>
       </ul>
-      
-      <p><strong>Important Security Notice:</strong> Due to end-to-end encryption, if you lose access to your iCloud Keychain and don't have recovery options configured, your encrypted data may be permanently inaccessible. We strongly recommend:</p>
+      <p>A few details are not end-to-end encrypted even with Advanced Data Protection: the date of each entry, whether it is an expense or an income, the month of each budget, and technical details such as when a record was last changed. No amounts, titles or category names you created are among them.</p>
+      <p>Apple explains both settings, and how to turn on Advanced Data Protection, in its <a href="https://support.apple.com/en-us/102651">iCloud data security overview</a>.</p>
+
+      <p><strong>Important Security Notice:</strong> If you have Advanced Data Protection turned on and lose access to your Apple Account without the recovery methods Apple asks you to set up, Apple cannot help you recover end-to-end encrypted data, and it may be permanently inaccessible. We strongly recommend:</p>
       <ul>
-        <li>Setting up Apple ID account recovery options</li>
+        <li>Setting up Apple Account recovery options</li>
         <li>Maintaining iCloud Keychain recovery methods</li>
         <li>Keeping at least one device with the App installed and synced</li>
         <li>Regularly exporting data for backup purposes (Premium feature)</li>
@@ -148,7 +167,7 @@ last_updated: July 21, 2025
         <li><strong>iCloud Infrastructure:</strong> Sharing uses Apple's iCloud shared database functionality</li>
         <li><strong>Invitation-Only:</strong> Only specifically invited iCloud users can access your shared data</li>
         <li><strong>Revocable:</strong> You can revoke access at any time through the App</li>
-        <li><strong>Same Encryption:</strong> Shared data maintains the same end-to-end encryption protection</li>
+        <li><strong>Same Encryption:</strong> Shared data is protected the same way as your own iCloud data in the App (see <a href="#data-encryption">Data Encryption</a>)</li>
       </ul>
       
       <h3>Shared Data Scope</h3>
@@ -162,9 +181,9 @@ last_updated: July 21, 2025
       <h3>Sharing Security</h3>
       <p>Shared data remains secure through:</p>
       <ul>
-        <li>End-to-end encryption using Apple's CloudKit</li>
+        <li>The encryption described under <a href="#data-encryption">Data Encryption</a></li>
         <li>Access limited to invited iCloud accounts only</li>
-        <li>No intermediary storage on our servers</li>
+        <li>No intermediary storage: we operate no servers</li>
         <li>Your ability to immediately revoke access</li>
       </ul>
     </div>
@@ -228,11 +247,12 @@ last_updated: July 21, 2025
       <h3>Since We Don't Collect Data</h3>
       <p>Traditional privacy rights like data access requests, deletion requests, or opting out of data collection don't apply because:</p>
       <ul>
-        <li>We don't collect your personal information</li>
-        <li>We don't store your data on our servers</li>
+        <li>We don't collect personal information through your use of the App</li>
+        <li>We operate no servers and don't store your financial data</li>
         <li>We don't have access to your financial information</li>
         <li>All data remains under your direct control</li>
       </ul>
+      <p>The exception is messages you send us through a contact form. You can ask for a copy of them, or for their deletion, by contacting us.</p>
       
       <h3>How to Exercise Your Control</h3>
       <ul>
@@ -245,7 +265,7 @@ last_updated: July 21, 2025
 
     <div class="policy-section">
       <h2>International Data Transfers</h2>
-      <p>Since we do not collect or store your personal data on our servers, traditional international data transfer concerns do not apply to our service.</p>
+      <p>Since we operate no servers and do not collect or store your financial data, traditional international data transfer concerns do not apply to it. Messages sent through a contact form are handled by the form-handling service named above and by our email provider, and may be processed outside your country.</p>
       
       <h3>iCloud Data Location</h3>
       <p>If you enable iCloud sync, your data storage location is determined by:</p>
@@ -259,7 +279,7 @@ last_updated: July 21, 2025
 
     <div class="policy-section">
       <h2>Children's Privacy</h2>
-      <p>The App is designed for general use and does not specifically target children under 13 years of age. We do not knowingly collect personal information from children under 13 because we do not collect personal information from any users.</p>
+      <p>The App is designed for general use and does not specifically target children under 13 years of age. We do not knowingly collect personal information from children under 13: the App collects no personal information from any user, and the only personal information we receive is what someone chooses to send us through a contact form.</p>
       
       <h3>Family Accounts</h3>
       <p>If the App is used on a device associated with a family Apple ID or if data is shared with family members:</p>
@@ -275,7 +295,7 @@ last_updated: July 21, 2025
       <p>For users in the European Union, this section provides additional information about your privacy rights under the General Data Protection Regulation (GDPR).</p>
       
       <h3>Legal Basis for Processing</h3>
-      <p>Since we do not process personal data on our servers, traditional GDPR processing bases don't apply to our service. Any data processing occurs:</p>
+      <p>For messages you send us through a contact form, we process your name, email address and message in order to answer your request, at your initiative. For your financial data, traditional GDPR processing bases don't apply to us, since we operate no servers and do not process it. Any processing of it occurs:</p>
       <ul>
         <li>Locally on your device for App functionality</li>
         <li>In your iCloud account under your control (if you enable sync)</li>
@@ -283,10 +303,10 @@ last_updated: July 21, 2025
       </ul>
       
       <h3>Data Controller</h3>
-      <p>For any personal data stored in iCloud (if you enable sync), you are the data controller of your own financial information. Apple acts as a data processor for iCloud services.</p>
+      <p>For any personal data stored in iCloud (if you enable sync), you are the data controller of your own financial information. Apple acts as a data processor for iCloud services. For messages you send us through a contact form, PuppyByte is the data controller.</p>
       
       <h3>GDPR Rights</h3>
-      <p>While traditional GDPR rights don't apply to us (since we don't collect your data), you maintain full control over your information through the App's features as described in the "Your Rights and Control" section above.</p>
+      <p>For your financial data, which we don't collect, you maintain full control through the App's features as described in the "Your Rights and Control" section above. For messages you have sent us, you can exercise your rights of access, correction and deletion by contacting us.</p>
     </div>
 
     <div class="policy-section">
@@ -315,7 +335,7 @@ last_updated: July 21, 2025
       <p><button class="contact-btn contact-link">Contact PuppyByte</button></p>
       
       <h3>Response Time</h3>
-      <p>We aim to respond to privacy-related inquiries within 30 days. Since we do not collect your personal data, most privacy requests can be addressed by using the App's built-in data control features.</p>
+      <p>We aim to respond to privacy-related inquiries within 30 days. Since we do not collect your financial data, most privacy requests can be addressed by using the App's built-in data control features.</p>
       
       <h3>Jurisdiction</h3>
       <p>PuppyByte operates from Europe. For EU users with privacy concerns that cannot be resolved through direct contact, you may have the right to lodge a complaint with your local data protection authority.</p>
